@@ -21,21 +21,21 @@ Clinical-LLM-CDSS is a multimodal AI-powered Clinical Decision Support System de
 ```text
 Laboratory Report (PDF/Image)
           ↓
-OCR & Data Extraction
+OCR & LLM Extraction
           ↓
-Feature Mapping & Normalization
+Feature Mapping & Normalization (Preprocessing)
           ↓
-Router Engine
+Router Engine (Disease-Specific Model Selection)
           ↓
-Disease-Specific Model Selection
-          ↓
-Hybrid XGBoost + MLP Models
+Hybrid Disease Specific Models (XGBoost + MLP)
           ↓
 Prediction Results
           ↓
-Explainability Module
+Severity Module
           ↓
-Ollama Clinical Chatbot
+LLM Explainability Module
+          ↓
+Clinical Decisions
 ```
 
 The system employs dedicated prediction pipelines for individual diseases. Based on the extracted laboratory features, the router automatically selects the appropriate disease-specific model.
@@ -45,9 +45,9 @@ Current implementations include:
 - Liver Disease Prediction
 
 Future extensions:
-- Diabetes Prediction
-- Cardiac Disease Prediction
-- Kidney Disease Prediction
+- Multiple disease Prediction
+- Learning Based Router Implementation
+- Server Level Implementation
 
 ## Technology Stack
 
@@ -66,8 +66,5 @@ Future extensions:
 
 ```text
 modules/
-models/
-artifacts/
 app.py
 main.py
-train.py
