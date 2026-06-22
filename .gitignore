@@ -7,5 +7,14 @@ vector_db/
 
 *.db
 temp*
-*.png
 *.pdf
+
+artifacts/
+
+heatmap.py
+train.py
+
+modules/explainability.py
+modules/global_parser.py
+modules/health_check.py
+modules/test.py
