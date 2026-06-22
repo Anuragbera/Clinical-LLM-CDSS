@@ -227,4 +227,3 @@ if __name__ == "__main__":
         target_col="Child-Pugh Class",
         model_name="liver"
     )
-
