@@ -1,0 +1,11 @@
+.venv/
+.idea/
+__pycache__/
+
+data/
+vector_db/
+
+*.db
+temp*
+*.png
+*.pdf
